@@ -18,9 +18,9 @@ export default function JavaAsciiArt() {
   `;
 
   return (
-    <div className="overflow-x-auto -mx-4 sm:mx-0 mt-12 sm:mt-16 mb-6 sm:mb-8 px-4 sm:px-0">
+    <div className="overflow-hidden -mx-4 sm:mx-0 mt-12 sm:mt-16 mb-6 sm:mb-8 px-4 sm:px-0">
       <div 
-        className="flex justify-center items-center"
+        className="flex justify-center items-center overflow-hidden"
         style={{
           perspective: "1200px",
           perspectiveOrigin: "center center",
@@ -28,7 +28,7 @@ export default function JavaAsciiArt() {
         }}
       >
         <div
-          className="java-flip-container relative"
+          className="java-flip-container relative overflow-hidden"
           style={{
             width: "100%",
             maxWidth: "350px",
