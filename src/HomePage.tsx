@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Github, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 import PersonalLinks from "./components/PersonalLinks";
 import Starfield from "./components/Starfield";

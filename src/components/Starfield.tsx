@@ -45,7 +45,6 @@ export default function Starfield() {
       const newWidth = window.innerWidth;
       const newHeight = window.innerHeight;
       const newIsMobile = newWidth < 640;
-      const oldWidth = width;
       const oldIsMobile = isMobile;
       
       width = newWidth;
@@ -70,10 +69,8 @@ export default function Starfield() {
 
     // Animation loop
     let animationId: number;
-    let lastTime = 0;
     
     const animate = (currentTime: number) => {
-      lastTime = currentTime;
       
       // Clear canvas
       ctx.fillStyle = "#0f172a"; // slate-950

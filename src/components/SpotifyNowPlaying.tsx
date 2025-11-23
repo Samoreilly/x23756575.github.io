@@ -58,12 +58,12 @@ export default function SpotifyNowPlaying() {
   }
 
   return (
-    <div className="fixed top-24 left-8 max-w-xs opacity-40 hover:opacity-80 transition-all duration-500 group">
-      <div className="bg-slate-900/60 backdrop-blur-sm border border-blue-900/30 rounded-sm p-3 hover:border-blue-700/50 transition-all duration-300">
-        <div className="flex items-start gap-3">
+    <div className="fixed bottom-20 left-4 sm:left-8 max-w-[280px] sm:max-w-sm opacity-60 hover:opacity-90 transition-all duration-500 group">
+      <div className="bg-slate-900/80 backdrop-blur-sm border border-blue-900/40 rounded-sm p-3 sm:p-4 hover:border-blue-700/60 transition-all duration-300">
+        <div className="flex items-start gap-2 sm:gap-3">
           {/* Album Art */}
           {track.albumArt && (
-            <div className="w-12 h-12 flex-shrink-0 rounded-sm overflow-hidden border border-blue-900/20">
+            <div className="w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0 rounded-sm overflow-hidden border border-blue-900/30">
               <img 
                 src={track.albumArt} 
                 alt="Album art" 
@@ -76,7 +76,7 @@ export default function SpotifyNowPlaying() {
           <div className="flex-1 min-w-0">
             <div className="flex items-center gap-2 mb-1">
               <span
-                className="text-blue-300/60 text-[10px]"
+                className="text-blue-300/60 text-[9px] sm:text-[10px]"
                 style={{ fontFamily: "JetBrains Mono, monospace" }}
               >
                 {track.isPlaying ? "♫ now playing" : "⏸ paused"}
@@ -84,7 +84,7 @@ export default function SpotifyNowPlaying() {
             </div>
             
             <p
-              className="text-blue-200/80 text-xs truncate mb-0.5"
+              className="text-blue-200/90 text-xs sm:text-sm truncate mb-0.5"
               style={{ fontFamily: "JetBrains Mono, monospace" }}
               title={track.name}
             >
@@ -92,7 +92,7 @@ export default function SpotifyNowPlaying() {
             </p>
             
             <p
-              className="text-blue-400/60 text-[10px] truncate"
+              className="text-blue-400/70 text-[10px] sm:text-xs truncate"
               style={{ fontFamily: "JetBrains Mono, monospace" }}
               title={track.artist}
             >
