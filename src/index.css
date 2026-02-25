@@ -1,53 +1,33 @@
 @import "tailwindcss";
 
-@keyframes spin3d {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
 }
 
-.java-flip-container {
-  animation: spin3d 4s infinite linear;
-  will-change: transform;
+:root {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  font-family: 'JetBrains Mono', monospace;
 }
 
-@keyframes shootingStar {
-  0% {
-    transform: translate(0, 0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(200px, 200px) scale(0);
-    opacity: 0;
-  }
-}
 
-@keyframes breathe {
-  0%, 100% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.6;
-  }
-}
-
-/* Smooth scrollbar */
+/* Minimalist scrollbar */
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #1e3a8a;
-  border-radius: 4px;
+  background: #ccc;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #2563eb;
+  background: #999;
 }
